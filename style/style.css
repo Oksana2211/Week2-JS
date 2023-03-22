@@ -1,0 +1,16 @@
+.block-1 {
+  margin-left: 2%;
+  margin-right: 50%;
+  font-size: 1.3rem;
+}
+.click {
+  min-width: 10vw;
+  min-height: 3vw;
+  background-color: rgb(199, 176, 221);
+  border: 1px solid rgb(85, 30, 117);
+  color: rgb(85, 30, 117);
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-size: 1.8rem;
+}

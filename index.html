@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/normalize.css" rel="stylesheet" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <section class="block-1">
+      <h1>Приветствую</h1>
+      <h2>Ответы на вопросы</h2>
+      <ol>
+        <li>Какие есть способы объявления функций?</li>
+        <p>Ответ:</p>
+        <ul>
+          <li>Function Declaration (основной)</li>
+          <li>Function Expression</li>
+          <li>Стрелочные функции (самый новый)</li>
+          <br />
+        </ul>
+        <li>
+          Приведите примеры вызова одной и той же функции всеми известными вам
+          способами.
+        </li>
+        <p>Ответ:</p>
+        <ul>
+          <li>
+            function sum(a, b){<br />
+            return a + b; }<br />
+            console.log(sum(5, 10));<br />
+          </li>
+          <br />
+          <li>
+            function sum(a) {<br />
+            return a + 10;<br />
+            }<br />
+            console.log(sum(5));
+          </li>
+          <br />
+          <li>
+            let sum = function (a, b){<br />
+            return a + b; }<br />
+            console.log(sum(5, 10));
+          </li>
+          <br />
+          <li>
+            let sum = (a, b) => console.log(a + b);<br />
+            sum(5, 10);
+          </li>
+          <br />
+          <li>
+            let sum = (a, b) => a + b;<br />
+            let result = sum(5, 10);<br />
+            console.log(result);
+          </li>
+          <br />
+
+          <li>
+            (function (a, b) {<br />
+            console.log(a + b);<br />
+            })(5, 10);
+          </li>
+          <br />
+          <li>
+            console.log(<br />
+            (function (a, b) {<br />
+            return a + b;<br />
+            })(5, 10) );
+          </li>
+          <br />
+          <li>
+            function sum(func) {<br />
+            func(5, 10);<br />
+            }<br />
+            sum(function (a, b) {<br />
+            console.log(a + b);<br />
+            });
+          </li>
+          <br />
+          <li>
+            function sum(a, b) {<br />
+            return a + b;<br />
+            }<br />
+            let result = sum(5, 10);<br />
+            console.log(result);
+          </li>
+          <br />
+          <li>
+            function sum(a, b) {<br />
+            console.log(a + b);<br />
+            }<br />
+            sum(5, 10);
+          </li>
+          <br />
+          <li>
+            function sum(a, b = 10) {<br />
+            console.log(a + b);<br />
+            }<br />
+            sum(5);
+          </li>
+        </ul>
+        <br />
+        <li>
+          В чём разница между тестированием и отладкой (дебаггингом)? А что
+          такое логирование?
+        </li>
+        <p>Ответ:</p>
+        <p>
+          Отладка и тестирование - это два четко различимых и непохожих друг на
+          друга этапа: при отладке происходит локализация и устранение
+          синтаксических ошибок и явных ошибок кодирования, а в процессе же
+          тестирования проверяется работоспособность программы, не содержащей
+          явных ошибок. Логирование - это процесс записи информации о событиях,
+          происходящих в рамках какого-либо процесса с некоторым объектом.
+          Логирование полезно для отладки различных частей приложения, а также
+          для сбора и анализа информации о работе системы с целью выявления
+          ошибок.
+        </p>
+        <li>В чём разница между Function Expression и Function Declaration?</li>
+        <p>Ответ:</p>
+        <p>
+          Function Declaration – функция, объявленная в основном потоке кода.
+          Function Expression – объявление функции в контексте какого-либо
+          выражения, например присваивания. Несмотря на немного разный вид, по
+          сути две эти записи делают одно и то же/
+        </p>
+        <li>Что делает функция console.log()?</li>
+        <p>Ответ:</p>
+        <p>Console.log(). Выводит сообщение в веб-консоль.</p>
+        <li>
+        По какой причине, мы можем использовать до объявления функцию,
+        объявленную через Function Declaration, но не можем ту, которая
+        объявлена через Function Expression ?
+      </li>
+       <p>Ответ:</p>
+      <p>Это возможно, потому что движок выполняет код не построчно сверху вниз, он сначала его компилирует, а лишь затем интерпретирует. Компиляция проходит довольно сложно,
+при первом проходе компилятор найдёт все объявления функций и объявит их. При этом никакой код не выполняется, методы не вызываются.</p>
+<li>Что такое глобальная зона видимости функций?</li>
+<p>Ответ:</p>
+<p>Глобальная – это область видимости сразу всей программы. А локальная – область видимости каждой отдельной части кода в программе, например, внутри функции.</p>
+    <li>Что вернет код?<br />
+    function showX(x)<br />
+{ <br />
+	return x;<br />
+}<br />
+console.log(showX(28));
+    </li>
+    <p>Ответ: 28</p>
+    <li>Что выведет этот код?<br />
+      function sum(x, y=0) {<br />
+  return x+y;<br />
+} <br />
+console.log(sum(5));
+    </li>
+    <p>Ответ:5</p>
+    <li>Что выведет код?<br />
+      console.log(foo); <br />
+
+let foo = "Cat";<br />
+
+console.log(foo);
+<p>Ответ: Uncaught ReferenceError: Cannot access 'foo' before initialization. "Ошибка ссылки: не удается получить доступ до инициализации" возникает, когда Переменная, объявленная с помощью let или const, доступна до ее инициализации в области применения.</p>
+    </li>
+</section>
+    <button class="click" onclick="showMessage();">Нажми на меня</button>
+    <script src="index.js"></script>
+  </body>
+</html>
