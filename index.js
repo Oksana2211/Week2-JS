@@ -2,6 +2,9 @@ function showMessage() {
   alert("Привет Кот!");
 }
 
+let showMessageFromCat = () => console.log("Я учу JavaScript!");
+showMessageFromCat();
+
 //let age = prompt("Сколько тебе лет?"); //запишет строкой
 //console.log(`Тебе ${age} лет!`);
 

@@ -9,8 +9,9 @@
     <title>JavaScript</title>
   </head>
   <body>
-    <section class="block-1">
-      <h1>Приветствую</h1>
+    <section class="task-block">
+      <div class="block1">
+      <h1>Приветствую <img class="img-cat" src="img/cat.png" alt="cat"> </h1>
       <h2>Ответы на вопросы</h2>
       <ol>
         <li>Какие есть способы объявления функций?</li>
@@ -135,7 +136,7 @@
         объявленную через Function Declaration, но не можем ту, которая
         объявлена через Function Expression ?
       </li>
-       <p>Ответ:</p>
+      <p>Ответ:</p>
       <p>Это возможно, потому что движок выполняет код не построчно сверху вниз, он сначала его компилирует, а лишь затем интерпретирует. Компиляция проходит довольно сложно,
 при первом проходе компилятор найдёт все объявления функций и объявит их. При этом никакой код не выполняется, методы не вызываются.</p>
 <li>Что такое глобальная зона видимости функций?</li>
@@ -164,6 +165,10 @@ let foo = "Cat";<br />
 console.log(foo);
 <p>Ответ: Uncaught ReferenceError: Cannot access 'foo' before initialization. "Ошибка ссылки: не удается получить доступ до инициализации" возникает, когда Переменная, объявленная с помощью let или const, доступна до ее инициализации в области применения.</p>
     </li>
+  </div>
+<div class="block2">
+  <img class="block2__img" src="img/cat1.png" alt="cat">
+</div>
 </section>
     <button class="click" onclick="showMessage();">Нажми на меня</button>
     <script src="index.js"></script>
