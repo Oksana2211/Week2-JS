@@ -27,11 +27,16 @@ function clearActiveClasses() {
   });
 }
 
-let year = prompt("Какой год?");
+//ЗАДАНИЕ **
+let year = prompt("Високосный ли год?");
 function leapyear(year) {
   return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
 }
-console.log(leapyear(year));
+if (leapyear(year) === true) {
+  alert("Год високосный");
+} else {
+  alert("Год не високосный");
+}
 
 //let age = prompt("Сколько тебе лет?"); //запишет строкой
 //console.log(`Тебе ${age} лет!`);
