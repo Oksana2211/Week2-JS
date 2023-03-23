@@ -27,6 +27,12 @@ function clearActiveClasses() {
   });
 }
 
+let year = prompt("Какой год?");
+function leapyear(year) {
+  return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+}
+console.log(leapyear(year));
+
 //let age = prompt("Сколько тебе лет?"); //запишет строкой
 //console.log(`Тебе ${age} лет!`);
 
