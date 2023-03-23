@@ -5,6 +5,28 @@ function showMessage() {
 let showMessageFromCat = () => console.log("Я учу JavaScript!");
 showMessageFromCat();
 
+function my_click() {
+  document.getElementById("image").src = "/img/cat1.png";
+}
+
+function my_click1() {
+  document.getElementById("image").src = "/img/cat2.png";
+}
+
+const slides = document.querySelectorAll(".slide");
+
+for (const slide of slides) {
+  slide.addEventListener("click", () => {
+    clearActiveClasses();
+    slide.classList.add("active");
+  });
+}
+function clearActiveClasses() {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+}
+
 //let age = prompt("Сколько тебе лет?"); //запишет строкой
 //console.log(`Тебе ${age} лет!`);
 
