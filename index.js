@@ -13,6 +13,19 @@ function my_click1() {
   document.getElementById("image").src = "img/cat2.png";
 }
 
+//ЗАДАНИЕ **
+let year = prompt("Високосный ли год?");
+function leapyear(year) {
+  return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+}
+if (leapyear(year) === true) {
+  alert("Год високосный");
+} else {
+  alert("Год не високосный");
+}
+
+
+///////////////////////////////////////////////////////
 const slides = document.querySelectorAll(".slide");
 
 for (const slide of slides) {
@@ -26,18 +39,7 @@ function clearActiveClasses() {
     slide.classList.remove("active");
   });
 }
-
-//ЗАДАНИЕ **
-let year = prompt("Високосный ли год?");
-function leapyear(year) {
-  return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
-}
-if (leapyear(year) === true) {
-  alert("Год високосный");
-} else {
-  alert("Год не високосный");
-}
-
+//////////////////////////////////////////////////////////
 //let age = prompt("Сколько тебе лет?"); //запишет строкой
 //console.log(`Тебе ${age} лет!`);
 
