@@ -6,11 +6,11 @@ let showMessageFromCat = () => console.log("Я учу JavaScript!");
 showMessageFromCat();
 
 function my_click() {
-  document.getElementById("image").src = "/img/cat1.png";
+  document.getElementById("image").src = "img/cat1.png";
 }
 
 function my_click1() {
-  document.getElementById("image").src = "/img/cat2.png";
+  document.getElementById("image").src = "img/cat2.png";
 }
 
 const slides = document.querySelectorAll(".slide");
