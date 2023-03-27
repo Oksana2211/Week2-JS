@@ -14,16 +14,18 @@ function my_click1() {
 }
 
 //ЗАДАНИЕ **
+// let year = prompt("Високосный ли год?");
+// function leapyear(year) {
+//   return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+// }
+// if (leapyear(year) === true) {
+//   alert("Год високосный");
+// } else {
+//   alert("Год не високосный");
+// }
 let year = prompt("Високосный ли год?");
-function leapyear(year) {
-  return year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
-}
-if (leapyear(year) === true) {
-  alert("Год високосный");
-} else {
-  alert("Год не високосный");
-}
-
+let isLeapYear = year % 100 === 0 ? year % 400 === 0 : year % 4 === 0;
+alert(isLeapYear? "Год високосный" : "Год не високосный")
 
 ///////////////////////////////////////////////////////
 const slides = document.querySelectorAll(".slide");
